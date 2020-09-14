@@ -50,7 +50,6 @@ class Auth extends React.Component {
   };
   render() {
     const data = window.localStorage.getItem('token') != null? JSON.parse(window.localStorage.getItem('token')) : null;
-    console.log(JSON.parse(window.localStorage.getItem('token')),'user')
     if(data!=null && data.user.token.length>10){
       return(
           <Redirect to="/admin/index"/>

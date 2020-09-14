@@ -125,7 +125,6 @@ const mapStateToProps=(state)=>{
 const mapDispatchToProps = (dispatch)=>{
   return {
       login:(params)=>dispatch(login(params)),
-      // clear:()=>dispatch(clearState)
   }
 }
 
